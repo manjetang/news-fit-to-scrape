@@ -19,7 +19,7 @@ var app = express();
 var port = process.env.PORT || 3000;
 
 
-var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/test";
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://<lion>:<Lion1234>@ds225253.mlab.com:25253/mongoscraper";
 
 mongoose.Promise = Promise;
 mongoose.connect(MONGODB_URI, {
