@@ -11,8 +11,8 @@ var request = require("request");
 
 // Mongoose
 
-var Note = require("./models/Note");
-var Article = require("./models/Article");
+//var Note = require("./models/Note");
+//var Article = require("./models/Article");
 var db = require("./models");
 
 var app = express();
