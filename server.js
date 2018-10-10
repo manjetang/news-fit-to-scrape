@@ -11,15 +11,15 @@ var request = require("request");
 
 // Mongoose
 
-var Note = require("./models/Note");
-var Article = require("./models/Article");
+var Note = require("./models/note");
+var Article = require("./models/article");
 var db = require("./models");
 
 var app = express();
 var port = process.env.PORT || 3000;
 
 
-//var MONGODB_URI = process.env.MONGODB_URI || "mongodb://<lion>:<Lion1234>@ds225253.mlab.com:25253/mongoscraper";
+ //var MONGODB_URI = process.env.MONGODB_URI || "mongodb://<lion>:<Lion1234>@ds225253.mlab.com:25253/mongoscraper";
 var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
 
 mongoose.Promise = Promise;
