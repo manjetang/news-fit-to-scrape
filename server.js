@@ -21,8 +21,8 @@ var port = process.env.PORT || 3000;
 
  //var MONGODB_URI = process.env.MONGODB_URI || "mongodb://<lion>:<Lion1234>@ds225253.mlab.com:25253/mongoscraper";
 var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
-
-mongoose.Promise = Promise;
+console.log(MONGODB_URI);
+mongoose.Promise = global.Promise;
 mongoose.connect(MONGODB_URI, {
     useNewUrlParser: true
 });
